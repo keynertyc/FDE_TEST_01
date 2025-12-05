@@ -1,43 +1,50 @@
 # Frontend Implementation
 
-## Tech Stack Options
+## Tech Stack
 
-- **Framework:** React, Vue.js, or Next.js
-- **Language:** TypeScript preferred
-- **Build Tool:** Vite recommended
-- **Styling:** Tailwind CSS, CSS Modules, or styled-components
+- **Framework:** React 19 + Vite
+- **Language:** TypeScript
+- **Build Tool:** Vite 7.2
+- **Styling:** Tailwind CSS + shadcn/ui
+- **State Management:** Zustand
+- **Forms:** React Hook Form + Zod
+- **HTTP Client:** Axios
+- **Testing:** Vitest + React Testing Library (15 tests across 5 suites)
 
 ---
 
-## Required Views
+## Implemented Views
 
 ### Public
-- Login page
-- Registration page
+- [x] Login page
+- [x] Registration page
 
 ### Admin
-- Dashboard (project stats overview)
-- Projects list (all projects)
-- Project detail (with comments)
-- Create/Edit project form
+- [x] Dashboard (project stats overview)
+- [x] Projects list (all projects)
+- [x] Project detail (with comments)
+- [x] Create project form
+- [x] Edit project form
 
 ### Client
-- Dashboard (my projects)
-- Project detail (view + comment)
+- [x] Dashboard (my projects)
+- [x] Projects list (assigned projects)
+- [x] Project detail (view + comment)
 
 ### Shared
-- Profile page (optional)
-- 404 page
+- [x] 404 Not Found page
+- [x] Protected routes with authentication
+- [x] Responsive Navbar
 
 ---
 
 ## Key Requirements
 
-- [ ] Protected routes (auth required)
-- [ ] Role-based access (Admin vs Client views)
-- [ ] Form validation
-- [ ] Loading and error states
-- [ ] Mobile responsive
+- [x] Protected routes (auth required)
+- [x] Role-based access (Admin vs Client views)
+- [x] Form validation
+- [x] Loading and error states
+- [x] Mobile responsive
 
 ---
 
@@ -53,5 +60,8 @@ cp .env.example .env
 
 ```bash
 npm install
-npm run dev
+npm run dev          # Start dev server at http://localhost:5173
+npm run build        # Build for production
+npm run test         # Run tests
+npm run test:ui      # Run tests with UI
 ```
